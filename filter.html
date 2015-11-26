@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>filter</title>
+<script src="jqueryv1.11.3.js"></script>
+<script>
+$("document").ready(function(){
+								$("li").eq(0).addClass("color").click(function(){
+																$(this).nextAll().slideToggle();
+																}).nextAll().hide(); 
+							
+		$("#name").click(function(){
+		$("a").toggleClass("click");
+		})
+		})
+</script>
+<style>
+div{width:300px;height:400px;background:#6c4b37;border:4px double black;}
+a{text-decoration:none;background:orange;padding:5px;}
+li{margin:20px;color:black;}
+.color{color:white;font-weight:bold;}
+.click{background:red;font-weight:bold;}
+</style>
+</head>
+<body>
+<center><div>
+<ol>
+<li><a href="#" id="name"> NAME</a></li>
+<li class="c1"><a href="#">CLASS</a></li>
+<li><a href="#">AGE</a></li>
+<li class="c1"><a href="#">BIRTHDAY</a></li>
+<li><a href="#">ZODIAC</a></li>
+<li class="c1"><a href="#">BIRTH PLACE</a></li>
+<li><a href="#">HIGH SCHOOL</a></li>
+<li class="c1"><a href="#">HOBBIES</a></li>
+<li><a href="#">ASPIRATION</a></li>
+</div></center>
+</body>
+</html>
